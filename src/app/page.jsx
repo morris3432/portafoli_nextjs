@@ -17,9 +17,9 @@ export default function Home() {
         <h1 className="mx-16 text-lg font-semibold">Me gusta aprender cosas nuevas en cada día, me gusta el trabajo en equipo, me gusta la naturaleza, soy una persona autodidacta.</h1>
         <div className="mx-14 mt-5 flex items-center justify-start gap-4">
           <button className="border-2 border-red-800 rounded-full py-2 px-6 hover:bg-red-800">Descargar CV</button>
-          <button className="border-2 border-red-800 rounded-full p-2 hover:bg-red-800"><Link href={git} passHref><GitHubIcon width={30} height={30}/></Link></button>
-          <button className='border-2 border-red-800 rounded-full p-2 hover:bg-red-800'><Link href={linkedin} passHref><LinkedinIcon height={30} width={30}/></Link></button>
-          <button className='border-2 border-red-800 rounded-full p-2 hover:bg-red-800'><Link href={youtube} passHref><YoutubeIcon height={30} width={30}/></Link></button>
+          <Link href={git} target="_blank"><button className="border-2 border-red-800 rounded-full p-2 hover:bg-red-800"><GitHubIcon width={30} height={30}/></button></Link>
+          <Link href={linkedin} target="_blank"><button className='border-2 border-red-800 rounded-full p-2 hover:bg-red-800'><LinkedinIcon height={30} width={30}/></button></Link>
+          <Link href={youtube} target="_blank"><button className='border-2 border-red-800 rounded-full p-2 hover:bg-red-800'><YoutubeIcon height={30} width={30}/></button></Link>
         </div>
       </div>
 

@@ -1,3 +1,9 @@
+# mi portafolio con next.js 
+este es mi pequeño portafolio web hecho con next.js
+
+## portfolio despliegado
+https://portafoli-kappa.vercel.app/
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

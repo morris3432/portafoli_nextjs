@@ -1,8 +1,8 @@
-import YoutubeIcon from "../components/icon/yoube";
-import GitHubIcon from "../components/icon/github";
-import Animation from "../components/text_animetion";
-import LinkedinIcon from "../components/icon/linkedin";
-import Carousel from "../components/carucel";
+import YoutubeIcon from "@/components/icon/yoube";
+import GitHubIcon from "@/components/icon/github";
+import Animation from "@/components/text_animetion";
+import LinkedinIcon from "@/components/icon/linkedin";
+import Carousel from "@/components/carucel";
 import Link from "next/link";
 
 export default function Home() {

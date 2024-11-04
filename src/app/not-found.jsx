@@ -5,7 +5,7 @@ const Not_found =()=>{
     return(
         <>
         <div className='w-full h-full absolute px-5 lg:flex lg:flex-col lg:items-center lg:justify-center'>
-            <div className="flex items-center justify-center">
+            <div className="mt-20 lg:mt-5 flex items-center justify-center">
                 <DevIcon width={125} height={125}/>
                 <h1 className='text-9xl font-bold'>404</h1>
             </div>

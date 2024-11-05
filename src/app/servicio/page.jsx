@@ -15,7 +15,7 @@ const Servicio = ()=>{
                         <h2 className="ml-3 text-3xl font-extrabold">Páginas y aplicaciones web</h2>
                     </div>
                     <p className="text-lg font-light mt-2">Desarrollo de páginas web estaticas y aplicaciones web con React, Next.JS, Flet de python,
-                        Tailwind CSS, CSS y JavaScripts 
+                        Tailwind CSS, CSS y JavaScripts.
                     </p>
                 </div>
 
@@ -25,7 +25,7 @@ const Servicio = ()=>{
                         <DeployIcon height={45} width={45}/>
                         <h2 className="ml-3 text-3xl font-extrabold">Despliegue de páginas y app's web</h2>
                     </div>
-                    <p className="text-lg font-light mt-2">Despliegue de páginas y aplicaciones web con Vercel y Render 
+                    <p className="text-lg font-light mt-2">Despliegue de páginas y aplicaciones web con Vercel y Render. 
                         <br /><a href="https://next-app-pink-mu.vercel.app/" className="hover:text-red-800 text-blue-800 mt-2" target="_blank">Ejemplo con Vercel</a>
                         <a href="https://cristian-web.onrender.com/" className="hover:text-red-800 text-blue-800 mt-2 mx-5" target="_blank">Ejemplo con Render</a>
                     </p>    
@@ -37,7 +37,7 @@ const Servicio = ()=>{
                         <PhoneIcon height={45} width={45}/>
                         <h2 className="ml-3 text-3xl font-extrabold">Aplicaciones móviles</h2>
                     </div>
-                    <p className="text-lg font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id earum fugiat nostrum, vitae recusandae ab voluptate similique sapiente soluta qui, praesentium nisi alias iste facere ad architecto dolores, quae velit?</p>
+                    <p className="text-lg font-light">Desarrollo de aplicaciones para dispositivos móviles con diferentes tecnologías, como Python y Java.</p>
                 </div>
 
                 <div className="p-4 border-b-4 border-red-800">
@@ -46,7 +46,7 @@ const Servicio = ()=>{
                         <DesktopIcon height={45} width={45}/>
                         <h2 className="ml-3 text-3xl font-extrabold">Aplicaciones de escritorio</h2>
                     </div>
-                    <p className="text-lg font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id earum fugiat nostrum, vitae recusandae ab voluptate similique sapiente soluta qui, praesentium nisi alias iste facere ad architecto dolores, quae velit?</p>
+                    <p className="text-lg font-light">Desarrollo de aplicaciones de escritorio con distintos frameworks como flet y tkinter de Python y Java</p>
                 </div>
                 
                 

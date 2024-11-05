@@ -9,7 +9,7 @@ const Not_found =()=>{
                 <DevIcon width={125} height={125}/>
                 <h1 className='text-9xl font-bold'>404</h1>
             </div>
-            <p className='py-5 text-base text-center'>No se encontro la página que buscabas o se redirecciono.</p>
+            <p className='py-5 text-base text-center'>La página que buscabas no existe o se redirecciono.</p>
             <Link href='/'><i className="border-2 border-red-800 py-2 px-6 rounded-full hover:bg-red-800">Volver a Inicio </i></Link>
         </div>
         </>

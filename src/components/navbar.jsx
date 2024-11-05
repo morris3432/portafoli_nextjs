@@ -36,9 +36,9 @@ const NavBar = () => {
             Resumen
           </li>
         </Link>
-        <li className="p-3 hover:bg-red-800 hover:text-white rounded-md transition-all cursor-pointer">
-          <Link href='/contacto'>Contacto</Link>
-        </li>
+        <Link href='/contacto'><li className="p-3 hover:bg-red-800 hover:text-white rounded-md transition-all cursor-pointer">
+          Contacto
+        </li></Link>
         <ThemeSwitcher/>
       </ul>
       

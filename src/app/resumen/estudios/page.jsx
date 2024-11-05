@@ -1,6 +1,50 @@
 const Estudios=()=>{
     return(
-        <h1>estudios</h1>
+    <>
+        <div className="h-40 flex flex-col justify-center items-center">
+                <h1 className="text-center text-red-800 text-4xl font-extrabold">Estudios</h1>
+                <p className="p-2">Aquí podrás encontrar una lista de mis estudios a nivel primario, basico y medio.</p>
+        </div >
+
+        <div className="w-full h-96 flex flex-col items-start justify-center bg-slate-950">
+            <div className="grid grid-cols-2 gap-5 w-full p-2">
+                <div className="flex items-center hover:scale-110 transition-all border-2 border-red-800 rounded-r-3xl rounded-l-2xl">
+                    <div className="bg-red-800 w-2.5 h-full rounded-l-full"></div>
+                    <div className="h-full w-full bg-gradient-to-r to-transparent rounded-r-3xl p-2">
+                        <h1 className="text-xl font-bold">2023 - 2024 </h1>
+                        <p className="text-lg font-semibold">Tecnologico Industrial André Ampere</p>
+                        <p className="text-base font-light">Desarrolle una aplicación que toma la asistencia por medio  de un codigo de barra</p>
+                    </div>
+                </div>
+                <div className="flex items-center hover:scale-110 transition-all border-2 border-red-800 rounded-r-3xl rounded-l-2xl">
+                    <div className="bg-red-800 w-3.5 h-full rounded-l-full"></div>
+                    <div className="h-full w-full bg-gradient-to-r to-transparent rounded-r-3xl p-2">
+                        <h1 className="text-xl font-bold">Septiembre - Octubre 2024</h1>
+                        <p className="text-lg font-semibold">VIA Aseso S.A</p>
+                        <p className="text-base font-light">Hice mis practicas profesionales</p>
+                    </div>
+                </div>
+                
+                <div className="flex items-center hover:scale-110 transition-all border-2 border-red-800 rounded-r-3xl rounded-l-2xl">
+                    <div className="bg-red-800 w-2.5 h-full rounded-l-full"></div>
+                    <div className="h-full w-full bg-gradient-to-r to-transparent rounded-r-3xl p-2">
+                        <h1 className="text-xl font-bold">2023 - 2024 </h1>
+                        <p className="text-lg font-semibold">Tecnologico Industrial André Ampere</p>
+                        <p className="text-base font-light"></p>
+                    </div>
+                </div>
+
+                <div className="flex items-center hover:scale-110 transition-all border-2 border-red-800 rounded-r-3xl rounded-l-2xl">
+                    <div className="bg-red-800 w-3 h-full rounded-l-full"></div>
+                    <div className="h-full w-full bg-gradient-to-r to-transparent rounded-r-3xl p-2">
+                        <h1 className="text-xl font-bold">Año</h1>
+                        <p className="text-lg font-semibold">Empresa o institución</p>
+                        <p className="text-base font-light">Descripcion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </>
     )
 }
 

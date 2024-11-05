@@ -5,12 +5,21 @@ import DevIcon from "./icon/devicon";
 import Link from "next/link";
 import Menu from "./icon/menu";
 import { ThemeSwitcher } from "./button/switch";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import { Button } from './ui/button'
 
 const NavBar = () => {
   const [menuOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex justify-between items-center py-3 px-4 md:px-32 drop-shadow-sm"> 
+    <nav className="flex justify-between items-center py-3 px-4 md:px-32 drop-shadow-sm"> 
       <Link href="/">
       <div className="flex justify-start items-center hover:scale-105 transition-all">
         <DevIcon width={50} height={40}/>
@@ -41,30 +50,27 @@ const NavBar = () => {
         </li></Link>
         <ThemeSwitcher/>
       </ul>
-      
-      <i onClick={() => setIsOpen(!menuOpen)} className="xl:hidden block cursor-pointer text-red-800">
-        <Menu height={35} width={35} />
-      </i>
-      <div className={`p-2 absolute xl:hidden top-24 right-0 w-3/12 border-2 flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${menuOpen ? "opacity-100" : "opacity-0"}`}
-          style={{ transition: 'transform 0.3s ease, opacity 0.3s ease' }}>
-        <ul>
-        <li className="text-red-800 list-none w-full text-center p-4 hover:bg-red-800 hover:text-white transition-all cursor-pointer">
-          <Link href='/'>Inicio</Link>
-        </li>
-        <li className="text-red-800 list-none w-full text-center p-4 hover:bg-red-800 hover:text-white transition-all cursor-pointer">
-          <Link href='/servicio'>Servicio</Link>
-        </li>
-        <li className="text-red-800 list-none w-full text-center p-4 hover:bg-red-800 hover:text-white transition-all cursor-pointer">
-          <Link href='/resumen'>Resumen</Link>
-        </li>
-        <li className="text-red-800 list-none w-full text-center p-4 hover:bg-red-800 hover:text-white transition-all cursor-pointer">
-          <Link href='/contacto'>Contacto</Link>
-        </li>
-        <ThemeSwitcher/>
-        </ul>
 
-      </div>
-    </div>
+      <Sheet>
+        <SheetTrigger asChild className="xl:hidden block cursor-pointer"><Menu height={35} width={35}/></SheetTrigger>
+        <SheetContent className='bg-black'>
+          <SheetHeader>
+            <SheetTitle className='text-red-800' >Menú</SheetTitle>
+            <SheetDescription>
+              Bienvenido 
+            </SheetDescription>
+          </SheetHeader>
+          <ul className="mt-5 ">
+            <Link href='/'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Inicio</h1></Link>
+            <Link href='/servicio'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Servicio</h1></Link>
+            <Link href='/resumen'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Resumen</h1></Link>
+            <Link href='/contacto'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Contacto</h1></Link>
+            <div className="flex items-start justify-start gap-5 text-white"><ThemeSwitcher/> <h1 className="text-xl font-bold">Tema</h1></div>
+          </ul>
+        </SheetContent>
+      </Sheet>
+
+    </nav>
   );
 }
 

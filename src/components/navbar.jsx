@@ -11,7 +11,8 @@ import {
   SheetDescription,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
+  SheetTrigger
+  ,SheetFooter
 } from "@/components/ui/sheet"
 import { Button } from './ui/button'
 
@@ -55,7 +56,7 @@ const NavBar = () => {
         <SheetTrigger asChild className="xl:hidden block cursor-pointer"><Menu height={35} width={35}/></SheetTrigger>
         <SheetContent className='bg-black'>
           <SheetHeader>
-            <SheetTitle className='text-red-800' >Menú</SheetTitle>
+            <SheetTitle className='text-red-800 text-3xl' >Menú</SheetTitle>
             <SheetDescription>
               Bienvenido 
             </SheetDescription>
@@ -65,8 +66,11 @@ const NavBar = () => {
             <Link href='/servicio'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Servicio</h1></Link>
             <Link href='/resumen'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Resumen</h1></Link>
             <Link href='/contacto'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Contacto</h1></Link>
-            <div className="flex items-start justify-start gap-5 text-white"><ThemeSwitcher/> <h1 className="text-xl font-bold">Tema</h1></div>
+            
           </ul>
+          <SheetFooter className='mt-80'>
+          <div className="flex items-start justify-start gap-5 text-white"><ThemeSwitcher/> <h1 className="text-xl font-bold">Tema</h1></div>
+          </SheetFooter>
         </SheetContent>
       </Sheet>
 

@@ -4,6 +4,7 @@ import Animation from "@/components/text_animetion";
 import LinkedinIcon from "@/components/icon/linkedin";
 import Carousel from "@/components/carucel";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const git = "https://github.com/morris3432";
@@ -11,10 +12,10 @@ export default function Home() {
   const youtube = "https://www.youtube.com/@cristianyancis8464";
   return (
     <div className='w-full h-full absolute flex items-center justify-center'>
-      <div className="w-6/12 mt-20"> 
+      <div className="w-full xl:w-6/12 mt-20 xl:mx-10"> 
         <h1 className="text-4xl text-center font-extrabold">Hola, soy</h1>
         <Animation/>
-        <h1 className="mx-16 text-lg font-semibold">Me gusta aprender cosas nuevas en cada día, me gusta el trabajo en equipo, me gusta la naturaleza, soy una persona autodidacta.</h1>
+        <h1 className="mx-16 text-lg font-semibold ">Me gusta aprender cosas nuevas en cada día, me gusta el trabajo en equipo, me gusta la naturaleza, soy una persona autodidacta.</h1>
         <div className="mx-14 mt-5 flex items-center justify-start gap-4">
           <button className="border-2 border-red-800 rounded-full py-2 px-6 hover:bg-red-800">Descargar CV</button>
           <Link href={git} target="_blank"><button className="border-2 border-red-800 rounded-full p-2 hover:bg-red-800"><GitHubIcon width={30} height={30}/></button></Link>
@@ -24,8 +25,8 @@ export default function Home() {
       </div>
 
       {/*img*/}
-      <div className="w-6/12 flex items-center justify-center ">
-        <div className="mt-16">
+      <div className="xl:block hidden w-6/12 items-center justify-center ">
+        <div className="mt-16 mx-32">
           <Carousel/>
         </div>
       </div>

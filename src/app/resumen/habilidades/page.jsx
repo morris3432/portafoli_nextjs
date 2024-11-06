@@ -8,7 +8,7 @@ export default function Habilidades(){
             <p className="p-2">Aquí podrás encontrar una lista de mis habilidades con diferentes Tecnologias como desarrollador web y móvil.</p>
         </div>
         
-        <div className="w-full h-96 flex flex-col items-start justify-center">
+        <div className="mt-14 lg:mt-0 w-full h-96 flex flex-col items-start justify-center">
             <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 w-full p-2">
                 <div className="flex items-center hover:scale-110 transition-all rounded-r-3xl rounded-l-2xl">
                     <div className="bg-red-800 w-2 h-full rounded-l-full"></div>

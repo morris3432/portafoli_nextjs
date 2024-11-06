@@ -8,10 +8,10 @@ import MenuL from "./menu";
 const NavBar = () => {
 
   return (
-    <nav className="  flex justify-between items-center py-3 px-4 md:px-32 drop-shadow-sm"> 
+    <nav className="bg-black xl:bg-transparent flex justify-between items-center py-3 px-4 md:px-32 drop-shadow-sm"> 
       <Link href="/">
       <div className="flex justify-start items-center hover:scale-105 transition-all">
-        <DevIcon width={50} height={40}/>
+        <DevIcon className='text-red-800 ' width={50} height={40}/>
         <h1 className='mx-3 font-extrabold text-2xl'>
           <samp className="text-red-300">Cris</samp>
           <samp className="text-red-800">tian</samp>

@@ -5,7 +5,7 @@ import { ThemeSwitcher } from "./button/switch"
 export default function MenuL(){
 return (
     <Sheet>
-        <SheetTrigger asChild className="xl:hidden block cursor-pointer"><Menu height={35} width={35}/></SheetTrigger>
+        <SheetTrigger asChild className="xl:hidden block cursor-pointer text-red-800"><Menu height={35} width={35}/></SheetTrigger>
         <SheetContent className='bg-black mt-16'>
         <SheetHeader>
             <SheetTitle className='text-red-800 text-3xl' >Menú</SheetTitle>

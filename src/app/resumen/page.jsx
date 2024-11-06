@@ -6,7 +6,7 @@ const Resumen=()=>{
                 <p className="p-2">Aquí podrás encontrar una breve descripción de mi experiencia profesional y el trabajo que he realizado en diferentes proyectos.</p>
         </div >
         <div className="w-full h-96 flex flex-col items-start justify-center">
-            <div className="grid grid-cols-2 gap-5 w-full p-2">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 w-full p-2">
                 <div className="flex items-center hover:scale-110 transition-all rounded-r-3xl rounded-l-2xl">
                     <div className="bg-red-800 w-2 h-full rounded-l-full"></div>
                     <div className="h-full w-full bg-gray-400 bg-opacity-20  rounded-r-3xl p-2">

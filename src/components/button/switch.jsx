@@ -11,11 +11,11 @@ export function ThemeSwitcher() {
   useEffect(() => {
     const root = document.documentElement;
     if (isDark) {
-      root.style.setProperty("--background", "#0a0a0a");
-      root.style.setProperty("--foreground", "#ededed");
+      root.style.setProperty("--background", "black");
+      root.style.setProperty("--foreground", "white");
     } else {
-      root.style.setProperty("--background", "#ffffff");
-      root.style.setProperty("--foreground", "#171717");
+      root.style.setProperty("--background", "white");
+      root.style.setProperty("--foreground", "black");
     }
   }, [isDark]);
 

@@ -12,6 +12,8 @@ const Contacto=()=>{
                     <input type="text" name="Asunto" className='w-full bg-transparent p-4 rounded-xl border-2 border-red-800 focus:outline-none mt-4' placeholder='Asunto'/>
                     <textarea name="mensaje" className='w-full bg-transparent p-4 rounded-xl border-2 border-red-800 focus:outline-none mt-4' placeholder='Escribe tu mensaje'/>
                    <div className='flex items-center justify-center'> <button type='sumit ' className='mt-5 hover:bg-transparent hover:text-red-800 hover:border-red-800 shadow-2xl hover:border-2 bg-red-800 text-white p-4 rounded-xl font-bold flex px-10'>Enviar<Send className='ml-1'/></button></div>
+                   <input type='hidden' name='_next' value='https://portafoli-kappa.vercel.app/'/>
+                   <input type='hidden' name='_captcha' value='false'/>
                 </form>  
             </div>
             <div className=' w-full xl:w-6/12 h-96 xl:h-[631px] flex flex-col items-center xl:items-start justify-center gap-4 xl:gap-2'>

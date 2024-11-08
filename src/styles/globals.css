@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-  /* Estilos para el color de fondo y el color de texto */
+/* Estilos para el color de fondo y el color de texto */
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -14,6 +14,30 @@ body {
   color: transparent; /* Hace que el texto no tenga relleno */
   -webkit-text-stroke: 2px #C62828; /* Contorno negro de 1px */
   text-stroke: 3px #C62828; /* Contorno negro de 1px */
+}
+
+/* Estilos para el enlace de la barra de navegación */
+.underline-center {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-center::after {
+  content: '';
+  position: absolute;
+  left: 55%;
+  right: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.underline-center:hover::after {
+  width: 100%;
+  left: -100;
 }
 
 @layer base {

@@ -21,22 +21,23 @@ const NavBar = () => {
       </Link>
       <ul className="hidden xl:flex items-center gap-12 font-semibold text-base text-red-800">
       <Link href='/'>
-        <p className="p-3 hover:bg-red-800 hover:text-white rounded-md transition-all cursor-pointer">
+        <p className="underline-center p-3 rounded-md transition-all cursor-pointer">
           Inicio
         </p></Link>
       <Link href='/servicio'>
-        <p className="p-3 hover:bg-red-800 hover:text-white rounded-md transition-all cursor-pointer">
+        <p className="underline-center p-3 rounded-md transition-all cursor-pointer">
           Servicio
         </p>
       </Link>
         <Link href='/resumen'>
-          <li className="p-3 hover:bg-red-800 hover:text-white rounded-md transition-all cursor-pointer">
+          <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
             Resumen
           </li>
         </Link>
-        <Link href='/contacto'><li className="p-3 hover:bg-red-800 hover:text-white rounded-md transition-all cursor-pointer">
+        <Link href='/contacto'>
+          <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
           Contacto
-        </li></Link>
+          </li></Link>
         <ThemeSwitcher/>
       </ul>
       <MenuL />

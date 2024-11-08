@@ -5,7 +5,7 @@ export default function Habilidades(){
     <>
         <div className="h-40 flex flex-col justify-center items-center">
             <h1 className="text-center text-red-800 text-4xl font-extrabold">Mis Habilidades</h1>
-            <p className="p-2">Aquí podrás encontrar una lista de mis habilidades con diferentes Tecnologias como desarrollador web y móvil.</p>
+            <p className="p-4">Aquí podrás encontrar una lista de mis habilidades con diferentes Tecnologias como desarrollador web y móvil.</p>
         </div>
         
         <div className="mt-14 lg:mt-0 w-full h-96 flex flex-col items-start justify-center">

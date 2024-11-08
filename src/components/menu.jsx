@@ -2,6 +2,8 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import Link from "next/link"
 import Menu from "./icon/menu"
 import { ThemeSwitcher } from "./button/switch"
+import { BookOpen, Home, ServerIcon,ContactIcon } from "lucide-react"
+
 export default function MenuL(){
 return (
     <Sheet>
@@ -14,10 +16,10 @@ return (
             </SheetDescription>
         </SheetHeader>
         <ul className="mt-5 ">
-            <Link href='/'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Inicio</h1></Link>
-            <Link href='/servicio'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Servicio</h1></Link>
-            <Link href='/resumen'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Resumen</h1></Link>
-            <Link href='/contacto'><h1 className="text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3 px-2">Contacto</h1></Link>
+            <Link href='/'><h1 className="flex text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3"><Home className="mr-2"/>Inicio</h1></Link>
+            <Link href='/servicio'><h1 className=" flex text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3"><ServerIcon className="mr-2"/>Servicios</h1></Link>
+            <Link href='/resumen'><h1 className="flex text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3"><BookOpen className="mr-2"/>Resumen</h1></Link>
+            <Link href='/contacto'><h1 className="flex text-2xl text-white font-bold hover:bg-red-800 hover:text-white py-3"><ContactIcon className="mr-2"/>Contacto</h1></Link>
             
         </ul>
         <SheetFooter className='mt-60'>

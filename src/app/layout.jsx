@@ -4,7 +4,7 @@ import NavBar from "@/components/navbar";
 import styles from "@/styles/navbar.module.css"
 
 const Starjhol =localFont({
-  src: "./fonts/Starjhol.ttf",
+  src: "/fonts/Starjhol.ttf",
   variable: "--font-starjhol",
   weight: "100 900",
 })
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${Starjhol.variable} ${Starjhol.variable} antialiased`}
+        className={` ${Starjhol.variable} antialiased`}
       >
       <div className={styles.navbar}>
         <NavBar/>

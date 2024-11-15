@@ -8,7 +8,7 @@ import MenuL from "./menu";
 const NavBar = () => {
 
   return (
-    <nav className="bg-black xl:bg-transparent flex justify-between items-center py-3 px-4 md:px-32 drop-shadow-sm"> 
+    <nav className="bg-black xl:bg-transparent flex items-center py-3 justify-between md:px-32 drop-shadow-sm"> 
       <Link href="/">
       <div className="flex justify-start items-center hover:scale-105 transition-all">
         <DevIcon className='text-red-800 ' width={50} height={40}/>
@@ -23,21 +23,28 @@ const NavBar = () => {
       <Link href='/'>
         <p className="underline-center p-3 rounded-md transition-all cursor-pointer">
           Inicio
-        </p></Link>
+        </p>
+      </Link>
       <Link href='/servicio'>
         <p className="underline-center p-3 rounded-md transition-all cursor-pointer">
           Servicio
         </p>
       </Link>
-        <Link href='/resumen'>
-          <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
+      <Link href='/resumen'>
+        <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
             Resumen
-          </li>
-        </Link>
-        <Link href='/contacto'>
-          <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
+        </li>
+      </Link>
+      <Link href='/proyectos'>
+        <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
+          Proyectos
+        </li>
+      </Link>
+      <Link href='/contacto'>
+        <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
           Contacto
-          </li></Link>
+        </li>
+      </Link>
         <ThemeSwitcher/>
       </ul>
       <MenuL />

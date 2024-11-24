@@ -6,48 +6,40 @@ import { ThemeSwitcher } from "./button/switch";
 import MenuL from "./menu";
 
 const NavBar = () => {
+  //logica 
 
   return (
-    <nav className="bg-black xl:bg-transparent flex items-center py-3 justify-between md:px-32 drop-shadow-sm"> 
-      <Link href="/">
-      <div className="flex justify-start items-center hover:scale-105 transition-all">
-        <DevIcon className='text-red-800 ' width={50} height={40}/>
-        <h1 className='mx-3 font-extrabold text-2xl'>
-          <samp className="text-red-300">Cris</samp>
-          <samp className="text-red-800">tian</samp>
-          <samp className="text-red-900">.</samp>
-        </h1>
+    <nav className="flex items-center justify-between flex-wrap px-8 py-4 bg-black xl:bg-transparent">
+      <div className="flex items-center flex-shrink-0 mr-6">
+        <DevIcon  width={50} height={50} className='mr-2 fill-red-800'/>
+        <h1 className="text-2xl font-extrabold"><span className="text-red-500">Cris</span><span className="text-red-700">tian</span><span className="text-red-900">.</span></h1>
+      </div>
+      
+      <div className="block lg:hidden">
+        <MenuL />
+      </div>
+
+      <div className="hidden lg:block">
+        <div className="flex items-center gap-10">
+          <Link href='/'>
+            <h1 className="text-xl font-extrabold text-red-800 border-b-2 border-transparent hover:border-b-2 hover:border-red-800 ">Inicio</h1>
+          </Link>
+          <Link href='/servicio'>
+            <h1 className="text-xl font-extrabold text-red-800 border-b-2 border-transparent hover:border-b-2 hover:border-red-800">Servicio</h1>
+          </Link>
+          <Link href='/resumen'>
+            <h1 className="text-xl font-extrabold text-red-800 border-b-2 border-transparent hover:border-b-2 hover:border-red-800">Resumen</h1>
+          </Link>
+          {/*<Link href='/proyectos'>
+            <h1 className="text-xl font-extrabold text-red-800 border-b-2 border-transparent hover:border-b-2 hover:border-red-800">Proyectos</h1>
+          </Link> */}
+          <Link href='/contacto'>
+            <h1 className="text-xl font-extrabold text-red-800 border-b-2 border-transparent hover:border-b-2 hover:border-red-800">Contacto</h1>
+          </Link>
+          <ThemeSwitcher /> 
         </div>
-      </Link>
-      <ul className="hidden xl:flex items-center gap-12 font-semibold text-base text-red-800">
-      <Link href='/'>
-        <p className="underline-center p-3 rounded-md transition-all cursor-pointer">
-          Inicio
-        </p>
-      </Link>
-      <Link href='/servicio'>
-        <p className="underline-center p-3 rounded-md transition-all cursor-pointer">
-          Servicio
-        </p>
-      </Link>
-      <Link href='/resumen'>
-        <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
-            Resumen
-        </li>
-      </Link>
-      <Link href='/proyectos'>
-        <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
-          Proyectos
-        </li>
-      </Link>
-      <Link href='/contacto'>
-        <li className="underline-center p-3 rounded-md transition-all cursor-pointer">
-          Contacto
-        </li>
-      </Link>
-        <ThemeSwitcher/>
-      </ul>
-      <MenuL />
+      </div>
+
     </nav>
   );
 }

@@ -53,9 +53,9 @@ export function ThemeSwitcher() {
         }`}
       >
         {isDark ? (
-          <MoonIcon height={20} width={20} fill="currentColor" />
+          <MoonIcon height={15} width={15} className='stroke-white '/>
         ) : (
-          <SunIcon height={20} width={20} fill="currentColor" />
+          <SunIcon height={15} width={15} className='stroke-white '/>
         )}
       </div>
     </div>

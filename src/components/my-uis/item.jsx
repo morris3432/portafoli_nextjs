@@ -5,18 +5,18 @@ const Projects=({img,title,info})=>{
 
     return(
         <>
-            <article className="flex gap-2 p-5  rounded-3xl border-2 border-red-800">
-                <Image src={images} alt="imagen del proyecto" width={250} height={50}/>
-                <div>
+            <article className="mt-20 shadow-xl shadow-red-700 rounded-3xl">
+                <Image src={images} alt="imagen del proyecto" width={350} height={50} className="border-l-2 border-r-2 border-t-2 border-red-800 rounded-t-3xl"/>
+                <div className="rounded-b-3xl p-4 border-b-2 border-r-2 border-l-2 border-red-800">
                     <header className="text-3xl font-extrabold">
                         {title}
                     </header>
-                    <samp className="text-xl font-light">
+                    <samp className="">
                         {info}
                     </samp>
-                    <button>ver más</button>
+
                 </div>
-            </article>
+            </article> 
         </>
     )
 }

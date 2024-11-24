@@ -9,6 +9,13 @@ module.exports = {
   theme: {
   	extend: {
   		colors: {
+			crisp:{ // paleta de colores personaalizados 
+				100: "#5C743B",
+				200: "#4a5d2f",
+				300: "#374623",
+				400: "#252e18",
+				500: "#12170c"
+		    },
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -56,6 +63,9 @@ module.exports = {
   			sm: 'calc(var(--radius) - 4px)'
   		}
   	}
+  },
+  variants: {
+    borderWidth: ['responsive', 'hover', 'focus'],
   },
   plugins: [require("tailwindcss-animate")],
 };

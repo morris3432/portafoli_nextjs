@@ -27,7 +27,7 @@ const Servicio = ()=>{
                     </div>
                     <p className="text-lg font-light mt-2">Despliegue de páginas y aplicaciones web con Vercel y Render. 
                         <br /><a href="https://next-app-pink-mu.vercel.app/" className="hover:text-red-800 text-blue-800 mt-2" target="_blank">Ejemplo con Vercel</a>
-                        <a href="https://cristian-web.onrender.com/" className="hover:text-red-800 text-blue-800 mt-2 mx-5" target="_blank">Ejemplo con Render</a>
+                        <a href="https://cristian-p57x.onrender.com//" className="hover:text-red-800 text-blue-800 mt-2 mx-5" target="_blank">Ejemplo con Render</a>
                     </p>    
                 </div>
                 

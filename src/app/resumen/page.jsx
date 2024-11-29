@@ -19,7 +19,7 @@ const Resumen=()=>{
                     <div className="bg-red-800 w-2.5 h-full rounded-l-full"></div>
                     <div className="h-full w-full bg-gray-400 bg-opacity-20 rounded-r-3xl p-2 ">
                         <h1 className="text-xl font-bold">Septiembre - Octubre 2024</h1>
-                        <p className="text-lg font-semibold">VIA Aseso S.A</p>
+                        <p className="text-lg font-semibold">VIA Asesores S.A</p>
                         <p className="text-base font-light">Hice mis practicas profesionales</p>
                     </div>
                 </div>

@@ -36,8 +36,11 @@ const Contacto=()=>{
                     </form>
                 </div>  
             </div>
-            <div className=' w-full xl:w-6/12 h-96 xl:h-[631px] flex flex-col items-center xl:items-start justify-center gap-4 xl:gap-2 ml-10'>
-                <div className='flex items-center '> 
+            <div className=' w-full xl:w-6/12 h-96 xl:h-[631px] flex flex-col items-center justify-center gap-4 xl:gap-10'>
+                <h1 className="text-4xl font-extrabold ">
+                    <span className="text-cyan-800">Contactame</span> <span className="text-cyan-700">tambien</span> <span className="text-cyan-600">por:</span>
+                </h1>
+                <div className='flex items-center'> 
                     <Mail className='mr-2' height={40} width={40} />
                     <h1 className='text-xl font-semibold mr-2'>G-Mail:</h1>
                     <p className='text-lg font-light'>bernardoyancis@gmail.com</p>

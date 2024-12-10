@@ -4,8 +4,10 @@ const Contacto=()=>{
     
     return(
         <>
+        <div className="flex justify-between items-center px-10 mt-16">
+        </div>
         <div className="mt-16 w-full xl:flex px-10">
-            <div className='w-full xl:w-6/12 h-[300px] xl:h-[631px] flex flex-col items-center justify-center rounded-2xl border-cyan-900 border-2 p-10'>
+            <div className='w-full xl:w-6/12 h-[405px] xl:h-[631px] flex flex-col items-center justify-center rounded-2xl border-cyan-900 border-2'>
                 <h2 className='text-4xl text-center font-extrabold text-cyan-900'>Trabajemos juntos...</h2>
                 <form action="https://formsubmit.co/bernardoyancis@gmail.com" method="POST" className="p-1">
                     <input type="email" name="Email" className='w-full bg-transparent p-4 rounded-lg border-2 border-cyan-900 focus:outline-none mt-4' placeholder='Correo'/>

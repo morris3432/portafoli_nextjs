@@ -12,8 +12,8 @@ export default function Home() {
   const youtube = "https://www.youtube.com/@cristianyancis8464";
   return (
     <div className='w-full h-full absolute flex items-center justify-center'>
-      <div className="w-full xl:w-6/12 mt-20 xl:mx-10"> 
-        <h1 className="text-4xl text-center font-extrabold">Hola, soy</h1>
+      <div className="w-full xl:w-6/12 mt-16 xl:mx-10"> 
+        <h1 className="text-4xl text-center font-extrabold mt-1">Hola, soy</h1>
         <div className="h-24 xl:h-auto">
           <Animation/>
         </div>

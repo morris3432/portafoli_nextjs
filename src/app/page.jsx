@@ -28,7 +28,7 @@ export default function Home() {
 
       {/*img*/}
       <div className="xl:block hidden w-6/12 items-center justify-center ">
-        <div className="mt-16 mx-32 animate-pulse">
+        <div className="mt-16 mx-32">
           <Carousel/>
         </div>
       </div>

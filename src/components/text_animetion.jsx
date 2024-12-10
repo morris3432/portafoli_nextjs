@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation"
 
 export default function Animation (){    
     return(
-    <div className="p-2 text-4xl text-center font-extrabold text-red-800">
+    <div className="p-2 text-4xl text-center font-extrabold text-cyan-900">
         <TypeAnimation 
             sequence={['Cristian Bernardo Yancis Ajuchán',2000
               ,'Desarrollador Web',2000,

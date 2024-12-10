@@ -8,6 +8,12 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		boxShadow:{
+			before: "-10px 9px 0 #fff",
+			before2: "-10px -10px 0 #fff",
+			after: "-10px 10px 0 #fff",
+            after2: "-10px -10px 0 #232949"
+		},
   		colors: {
 			crisp:{ // paleta de colores personaalizados 
 				100: "#5C743B",

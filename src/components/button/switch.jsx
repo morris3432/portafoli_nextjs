@@ -43,7 +43,7 @@ export function ThemeSwitcher() {
   return (
     <div
       onClick={toggleTheme}
-      className={`border-2 border-red-800 flex items-center cursor-pointer w-14 h-8 rounded-full p-1 transition-all ${
+      className={`border-2 border-cyan-900 flex items-center cursor-pointer w-14 h-8 rounded-full p-1 transition-all ${
         isDark ? "bg-gray-800" : "bg-white"
       }`}
     >

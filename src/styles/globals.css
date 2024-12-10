@@ -12,8 +12,8 @@ body {
 /* Archivo: styles.css o un archivo de estilos global */
 .text-outline {
   color: transparent; /* Hace que el texto no tenga relleno */
-  -webkit-text-stroke: 2px #C62828; /* Contorno negro de 1px */
-  text-stroke: 3px #C62828; /* Contorno negro de 1px */
+  -webkit-text-stroke: 2px rgb(0, 56, 56); /* Contorno negro de 1px */
+  text-stroke: 3px rgb(0, 56, 56); /* Contorno negro de 1px */
 }
 
 /* Estilos para el enlace de la barra de navegación */

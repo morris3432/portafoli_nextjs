@@ -4,7 +4,7 @@ import { useState } from "react"
 import styles from '../styles/carrusel.module.css'
 
 const Carousel=(props)=>{
-    const imagenes = ['/images/log.png', '/images/yo.jpg'];
+    const imagenes = ['/images/yo.jpg', '/images/log.png'];
     const [selectIndex, setSelectIndex] = useState(0);
     const [selectImage, setSelectImage] = useState(imagenes[0]);
 
@@ -30,8 +30,8 @@ const Carousel=(props)=>{
     <>
         <Image src={selectImage} alt="carusel de imagenes" width={500} height={0} className={styles.carrusel}/>
         <div className="flex justify-center items-cente gap-4">        
-            <button onClick={previous} className="  text-black rounded-xl px-4 font-extrabold">{'<'}</button>
-            <button onClick={next} className=" text-black rounded-xl px-4 font-extrabold">{'>'}</button>
+            <button onClick={previous} className="  text-white rounded-xl px-4 font-extrabold">{'<'}</button>
+            <button onClick={next} className=" text-white rounded-xl px-4 font-extrabold">{'>'}</button>
         </div>
     </>
     )

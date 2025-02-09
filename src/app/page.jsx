@@ -10,6 +10,8 @@ export default function Home() {
   const git = "https://github.com/morris3432";
   const linkedin = "https://www.linkedin.com/in/cristian-bernardo-yancis-ajuch%C3%A1n-32717a306/";
   const youtube = "https://www.youtube.com/@cristianyancis8464";
+  const cv = "https://rxresu.me/morris3432/cristian-yancis";
+  
   return (
     <div className='w-full h-full absolute flex items-center justify-center'>
       <div className="w-full xl:w-6/12 mt-20 xl:mx-10"> 
@@ -19,7 +21,7 @@ export default function Home() {
         </div>
         <h1 className="mx-16 text-lg font-semibold ">Me gusta aprender cosas nuevas en cada día, me gusta el trabajo en equipo, me gusta la naturaleza, soy una persona autodidacta.</h1>
         <div className="mx-14 mt-5 flex items-center justify-start gap-4">
-          <button className="border-2 border-cyan-900 rounded-full py-2 px-6 hover:bg-cyan-900">Descargar CV</button>
+          <Link href={cv} target="_blank"> <button className="border-2 border-cyan-900 rounded-full py-2 px-6 hover:bg-cyan-900">Descargar CV</button></Link>
           <Link href={git} target="_blank"><button className="border-2 border-cyan-900 rounded-full p-2 hover:bg-cyan-900"><GitHubIcon width={30} height={30}/></button></Link>
           <Link href={linkedin} target="_blank"><button className='border-2 border-cyan-900 rounded-full p-2 hover:bg-cyan-900'><LinkedinIcon height={30} width={30}/></button></Link>
           <Link href={youtube} target="_blank"><button className='border-2 border-cyan-900 rounded-full p-2 hover:bg-cyan-900'><YoutubeIcon height={30} width={30}/></button></Link>
